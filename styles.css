@@ -1,0 +1,49 @@
+.logo {
+    font-weight: bold;
+    font-size: larger;
+}
+
+body {
+    background-color: #ccc5b9;
+}
+
+.card {
+    height: 300px;
+}
+
+h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #EB5E28;
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  h1 {
+    position: relative;
+    font-size: 5rem;
+  }
+  #five-f {
+    list-style-type: none;
+  }
+  .carousel-inner{
+    height: 400px;
+}
+ .d-block{
+    height: 400px;
+ }
+ 
+  
